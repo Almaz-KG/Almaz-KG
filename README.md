@@ -33,7 +33,7 @@ focus = {
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Almaz-KG/Almaz-KG/main/assets/stack-dark.svg">
-    <img src="https://raw.githubusercontent.com/Almaz-KG/Almaz-KG/main/assets/stack-light.svg" alt="Python, PyTorch, Rust, TypeScript, React, FastAPI, Docker, Kubernetes, Linux, Git, GitHub Actions; GCP, BigQuery, dbt, Airflow, Spark, Databricks, Kafka, Terraform, Postgres" />
+    <img src="https://raw.githubusercontent.com/Almaz-KG/Almaz-KG/main/assets/stack-light.svg" alt="Python, PyTorch, Rust, TypeScript, React, FastAPI, Docker, Nookat, Kubernetes, Linux, Git, GitHub Actions; GCP, BigQuery, dbt, Airflow, Spark, Databricks, Kafka, Terraform, Postgres" />
   </picture>
 </div>
 

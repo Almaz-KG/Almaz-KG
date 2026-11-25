@@ -1,6 +1,6 @@
 """Build the two-row stack icon strip shown on the profile README.
 
-skillicons.dev has no Airflow, Spark, Databricks, dbt or BigQuery, so those are
+skillicons.dev has no Nookat, Airflow, Spark, Databricks, dbt or BigQuery, so those are
 drawn here as tiles with skillicons' own geometry and colours, and both rows are
 written into one static SVG per theme. The README then depends on no live icon
 service, and the custom tiles cannot drift out of line with the stock ones.
@@ -32,6 +32,10 @@ DBT_BIT = (
     "https://raw.githubusercontent.com/dbt-labs/docs.getdbt.com/"
     "a864cf0264e76e6f258f623d9b8a6b9756b60806/website/static/img/icons/dbt-bit.svg"
 )
+NOOKAT_MARK = (
+    "https://raw.githubusercontent.com/nookat-io/nookat-io.github.io/"
+    "03abc5e3ef3db7f7292727727794a39ffbfb174a/public/brand/nookat-mark.svg"
+)
 
 @dataclass(frozen=True)
 class Logo:
@@ -47,7 +51,7 @@ class Logo:
 ROWS: list[list[str | Logo]] = [
     # Languages, ML and the software around it
     ["python", "pytorch", "rust", "ts", "react", "fastapi",
-     "docker", "kubernetes", "linux", "git", "githubactions"],
+     "docker", Logo(NOOKAT_MARK), "kubernetes", "linux", "git", "githubactions"],
     # Data engineering
     ["gcp",
      Logo(SIMPLE_ICONS.format("googlebigquery"), fill="#669DF6"),
